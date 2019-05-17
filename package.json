@@ -1,6 +1,6 @@
 {
   "name": "@cat5th/get-comments",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "a script that gets document comments",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,12 +11,15 @@
     "test": "karma start",
     "build:babel": "tsc --emitDeclarationOnly --removeComments false && babel src --out-dir dist --extensions '.ts,.tsx,.js,.jsx' && uglifyjs-folder dist -e -o dist -x .js",
     "build:ts": "tsc",
-    "build": "build:ts",
+    "build": "npm run build:ts",
     "lint": "eslint src/** --ext .ts",
     "postversion": "git push --follow-tags",
     "changelog": "gitmoji-changelog",
     "version": "npm run changelog && git add -A .",
     "codecov": "codecov"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": "https://github.com/harvey-woo/get-comments",
   "author": "Harvey Woo",
