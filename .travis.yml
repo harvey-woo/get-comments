@@ -25,7 +25,7 @@ after_success:
 
 before_deploy:
   - npm run build
-  - npm run doc
+  # - npm run doc
 deploy:
   - provider: npm
     email: harvey.woo@outlook.com

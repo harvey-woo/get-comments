@@ -1,7 +1,7 @@
 {
   "name": "@cat5th/get-comments",
   "version": "0.1.0",
-  "description": "a applet get comments of document element",
+  "description": "a script that gets document comments",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
