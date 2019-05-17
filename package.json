@@ -18,6 +18,9 @@
     "version": "npm run changelog && git add -A .",
     "codecov": "codecov"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "https://github.com/harvey-woo/get-comments",
   "author": "Harvey Woo",
   "license": "MIT",
