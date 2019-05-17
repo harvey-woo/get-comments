@@ -1,3 +1,10 @@
+# get-comments
+
+[![npm version](https://img.shields.io/npm/v/@cat5th/get-comments.svg?style=flat-square)](https://www.npmjs.com/package/@cat5th/get-comments)
+[![coverage](https://img.shields.io/codecov/c/github/harvey-woo/get-comments.svg?style=flat-square)](https://codecov.io/gh/harvey-woo/get-comments)
+[![npm downloads](https://img.shields.io/npm/dt/@cat5th/get-comments.svg?style=flat-square)](https://www.npmjs.com/package/@cat5th/get-comments)
+[![Build Status](https://img.shields.io/travis/harvey-woo/get-comments.svg?style=flat-square)](https://travis-ci.org/harvey-woo/get-comments)
+
 A script that gets documentation comments
 
 ## Installation
