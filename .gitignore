@@ -1,0 +1,10 @@
+node_modules/
+.vscode/
+.idea/
+dist/
+docs/
+.DS_Store
+coverage/
+.karma-parcel/
+yarn-error.log
+./cache

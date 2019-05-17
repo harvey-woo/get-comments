@@ -1,0 +1,43 @@
+language: node_js
+node_js:
+  - 8
+
+before_install:
+  - chmod +x merge.sh
+
+cache:
+  directories:
+    - node_modules
+
+if: tag IS present
+
+branches:
+  only:
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+
+script:
+  - npm run lint
+  - npm t
+
+after_success:
+  - npm run codecov
+  - ./merge.sh
+
+before_deploy:
+  - npm run build
+  - npm run doc
+deploy:
+  - provider: npm
+    email: harvey.woo@outlook.com
+    api_key: $NPM_AUTH_TOKEN
+    skip_cleanup: true
+    on:
+      tags: true
+  - 
+    provider: pages
+    local-dir: docs
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    on:
+      tags: true
