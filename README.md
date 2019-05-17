@@ -5,7 +5,7 @@
 [![npm downloads](https://img.shields.io/npm/dt/@cat5th/get-comments.svg?style=flat-square)](https://www.npmjs.com/package/@cat5th/get-comments)
 [![Build Status](https://img.shields.io/travis/harvey-woo/get-comments.svg?style=flat-square)](https://travis-ci.org/harvey-woo/get-comments)
 
-A script that gets documentation comments
+A script that gets document comments
 
 ## Installation
 
@@ -35,7 +35,7 @@ npm i @cat5th/get-comments
 ```javascript
 import { getComment, getComments } from '@cat5th/get-comments'
 
-// get singal element
+// get a single element
 getComment('hello') // => <!--hello-->
 
 // get comments

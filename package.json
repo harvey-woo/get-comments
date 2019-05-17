@@ -11,7 +11,7 @@
     "test": "karma start",
     "build:babel": "tsc --emitDeclarationOnly --removeComments false && babel src --out-dir dist --extensions '.ts,.tsx,.js,.jsx' && uglifyjs-folder dist -e -o dist -x .js",
     "build:ts": "tsc",
-    "build": "build:ts",
+    "build": "npm run build:ts",
     "lint": "eslint src/** --ext .ts",
     "postversion": "git push --follow-tags",
     "changelog": "gitmoji-changelog",
