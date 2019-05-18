@@ -13,5 +13,26 @@ module.exports = function(config) {
     reporters: ['dots', 'karma-typescript'],
     browsers: ['ChromeHeadless'],
     singleRun: true,
+    karmaTypescriptConfig: {
+      reports: {
+        cobertura: {
+          directory: 'coverage',
+          filename: 'coverage.xml',
+          subdirectory: '.'
+        },
+        lcovonly: {
+          directory: 'coverage',
+          filename: 'lcov.info',
+          subdirectory: '.'
+        },
+        json: {
+          directory: 'coverage',
+          filename: 'coverage-final.json',
+          subdirectory: '.'
+        },
+        html: 'coverage',
+        'text-summary': ''
+      }
+    }
   })
 }
