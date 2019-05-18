@@ -1,5 +1,17 @@
 # Changelog
 
+<a name="0.2.2"></a>
+## 0.2.2 (2019-05-18)
+
+### Changed
+
+- 🔧 add lcov.info and coverage.xml coverage-final.json for codecov [[48e4a21](https://github.com/harvey-woo/get-comments/commit/48e4a2175447b0b49b8884ba1da0b0b7a46aea5f)]
+
+### Miscellaneous
+
+- 📝 regenerate changelog [[d3cb4ce](https://github.com/harvey-woo/get-comments/commit/d3cb4cec1fd5a0d2757c380152cf1b437d80cb76)]
+
+
 <a name="0.2.1"></a>
 ## 0.2.1 (2019-05-17)
 
