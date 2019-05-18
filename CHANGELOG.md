@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.2.3"></a>
+## 0.2.3 (2019-05-18)
+
+### Changed
+
+- 🔧 add prettier [[38862bd](https://github.com/harvey-woo/get-comments/commit/38862bd7f93d5a3a56b5fb116e6b95db4528789d)]
+
+
 <a name="0.2.2"></a>
 ## 0.2.2 (2019-05-18)
 
