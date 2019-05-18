@@ -15,16 +15,22 @@ function normalizeCondition(condition: Condition): _InnerCondition {
   }
   if (_condition instanceof RegExp) {
     const oldCondition = _condition
-    _condition = (elem) => oldCondition.test(elem.textContent || '')
+    _condition = elem => oldCondition.test(elem.textContent || '')
   }
   if (typeof _condition === 'function') {
     return _condition
   }
-  throw new RangeError(`typeof condition suppose to be RegExp | String | (string) => Boolean, current is ${typeof condition}`)
+  throw new RangeError(
+    `typeof condition suppose to be RegExp | String | (string) => Boolean, current is ${typeof condition}`
+  )
 }
 
-function _getComments(condition: Condition, one: true, context ?: Node) : Comment
-function _getComments(condition: Condition, one: false, context ?: Node) : Comment[]
+function _getComments(condition: Condition, one: true, context?: Node): Comment
+function _getComments(
+  condition: Condition,
+  one: false,
+  context?: Node
+): Comment[]
 function _getComments(condition: any, one: any, context: any): any {
   const result: Comment[] = []
   const _condition = normalizeCondition(condition)
@@ -46,11 +52,17 @@ function _getComments(condition: any, one: any, context: any): any {
   return one ? result[0] : result
 }
 
-function getComment(condition ?: Condition, context: Node = document.documentElement) {
+function getComment(
+  condition?: Condition,
+  context: Node = document.documentElement
+) {
   return _getComments(condition, true, context)
 }
 
-function getComments(condition ?: Condition, context: Node = document.documentElement) {
+function getComments(
+  condition?: Condition,
+  context: Node = document.documentElement
+) {
   return _getComments(condition, false, context)
 }
 

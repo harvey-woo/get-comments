@@ -20,7 +20,9 @@ describe('simple-test', () => {
     expect(getComments(RAMDOM).length).to.be(2)
   })
   it('get all comments', () => {
-    expect(getComments(undefined, document.querySelector(`#${CONTEXT_ID}`)).length).to.be(2)
+    expect(
+      getComments(undefined, document.querySelector(`#${CONTEXT_ID}`)).length
+    ).to.be(2)
   })
   it('get comment not exist', () => {
     expect(getComment(`${RAMDOM}_3`)).not.ok()
