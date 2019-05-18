@@ -1,4 +1,5 @@
 {
+  "plugins": ["prettier"],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -14,6 +15,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "prettier/prettier": "error",
     "no-unused-vars": "off",
     "no-undef": "off",
     "indent": [
