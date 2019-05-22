@@ -24,6 +24,7 @@
   "repository": "https://github.com/harvey-woo/get-comments",
   "author": "Harvey Woo",
   "license": "MIT",
+  "keywords": ["get-comment", "get-comments", "html", "HTML", "comment", "comments", "element", "query-comment", "query-comments"],
   "devDependencies": {
     "@types/expect.js": "^0.3.29",
     "@types/mocha": "^5.2.6",
