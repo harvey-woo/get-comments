@@ -1,5 +1,17 @@
 # Changelog
 
+<a name="0.2.4"></a>
+## 0.2.4 (2019-05-22)
+
+### Added
+
+- ✅ add throw test [[7548c15](https://github.com/harvey-woo/get-comments/commit/7548c150ccbca1ccecfcffb2fc1ba0e1d99dbb4c)]
+
+### Miscellaneous
+
+- 🙈 add .prettierignore [[57aa3cf](https://github.com/harvey-woo/get-comments/commit/57aa3cf0e2a7d37927a6a41e23f19b6234769497)]
+
+
 <a name="0.2.3"></a>
 ## 0.2.3 (2019-05-18)
 

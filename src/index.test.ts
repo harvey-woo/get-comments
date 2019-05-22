@@ -13,6 +13,10 @@ describe('simple-test', () => {
   it('works', () => {
     expect(typeof getComment).to.be('function')
   })
+  it('throw', () => {
+    //@ts-ignore
+    expect(() => getComments(1)).to.throwError()
+  })
   it('get comment', () => {
     expect(getComment(RAMDOM)).to.ok()
   })
